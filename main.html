@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="text-center">Simple Website</h1>
+      <!-- Search area -->
+      <div class="search-area text-center">
+        <input id="search-input" type="text" placeholder="Meal/food title" />
+        <button onclick="clickToSearch()">Search</button>
+      </div>
+      <div class="search-area text-center">
+        <input id="results-input" type="number" placeholder="results" />
+      </div>
+      <!-- Error Area -->
+      <div id="error-area"></div>
+      <!-- Details Result area -->
+      <div id="details-area">
+        <div id="item-details" class="item-details"></div>
+      </div>
+      <!-- Search items area -->
+      <div id="food-items" class="food-items text-center"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
